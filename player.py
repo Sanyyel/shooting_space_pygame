@@ -9,7 +9,7 @@ class Player(pg.sprite.Sprite):
         super(Player,self).__init__() # chama o construtor pai
         self.width = width
         self.heigth = heigth
-        self.surf = pg.Surface((50,25))
+        self.surf = pg.Surface((50,50))
         self.surf.fill((255,0,0)) # vermelho
         self.rect = self.surf.get_rect(
             center = (10,380)

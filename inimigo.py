@@ -9,9 +9,9 @@ class Inimigo(pg.sprite.Sprite):
     """  Define aqui o construtor e outros metodos  """
     def __init__(self, width, height):
         super(Inimigo,self).__init__() # chama o construtor pai
-        self.surf = pg.Surface((25,25))
         self.width = width
         self.height = height
+        self.surf = pg.Surface((50,50))
         self.surf.fill((255,128,70))
         self.rect = self.surf.get_rect(
             center = (200, 200)
